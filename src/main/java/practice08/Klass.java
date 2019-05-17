@@ -12,10 +12,12 @@ public class Klass {
         return "Class 2";
     }
     Student student;
-    public Student assignLeader(Student student){
-        return student;
+    public Integer flag = 0;
+    public void assignLeader(Student student){
+        this.flag = 1;
+        this.student = student;
     }
     public Student getLeader(){
-        return assignLeader(student);
+        return student;
     }
 }

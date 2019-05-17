@@ -13,8 +13,7 @@ public class Student extends Person {
     }
     private String ss;
     public String introduce(){
-        System.out.println(klass.getLeader().getName());
-        if(klass.getLeader().getName() == "Tom"){
+        if(klass.flag == 1){
             ss = super.introduce()+str;
         }else{
             ss = super.introduce()+str2;

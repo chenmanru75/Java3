@@ -18,4 +18,11 @@ public class Person {
     public String introduce(){
         return "My name is Tom. I am 21 years old.";
     }
+
+    private Person(){}
+    private static Person p = new Person();
+    public static Person getInstance(){
+        return p;
+    }
+
 }
