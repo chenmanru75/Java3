@@ -55,6 +55,7 @@ public class Practice11Test {
         Student jerry = new Student(1, "Jerry", 8, new Klass(5));
 
         klass2.assignLeader(jerry);
+        System.err.print("jerry"+jerry);
 
         assertThat(systemOut()).isEqualTo("It is not one of us.\n");
         assertThat(klass2.getLeader()).isNotEqualTo(jerry);

@@ -23,4 +23,5 @@ public class Student extends Person{
     public Klass getKlass(){
         return klass;
     }
+
 }

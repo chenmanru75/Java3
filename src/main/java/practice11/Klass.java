@@ -30,4 +30,6 @@ public class Klass {
         flag2 = 1;
         System.out.print("I am Tom. I know Jerry has joined Class 2.\n");
     }
+
+
 }

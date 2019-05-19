@@ -18,4 +18,19 @@ public class Person {
     public String introduce(){
         return "My name is Tom. I am 21 years old.";
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj!=null){
+            if (obj.getClass()==Student.class||obj.getClass()==Teacher.class){
+                return super.equals(obj);
+            }
+            if (obj.getClass()==Person.class){
+                Person person=(Person) obj;
+                if (person.name==name&&person.age==age&&person.id==id){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
